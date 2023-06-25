@@ -25,7 +25,7 @@ body {
   height: 100vh;
   display: flex;
   .signup-row {
-    width: 65%;
+    width: 50em;
     background-color: var(--white);
     .signup-left-container {
       .signup-left {
@@ -116,7 +116,6 @@ body {
 @media (max-width:768px) {
   .signup-row {
     flex-direction: column-reverse;
-    width: 90%;
   }
   // switching from desktop image to mobile image
   .signup-right {
