@@ -107,6 +107,7 @@ body p {
 @media (max-width: 768px) {
   .signup-row {
     flex-direction: column-reverse;
+    width: 90%;
   }
   .signup-right .desktop-img {
     display: none;
