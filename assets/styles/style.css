@@ -69,7 +69,7 @@ body p {
 }
 .signup-page .signup-row .signup-right .mobile-img {
   display: none;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
 }
 
@@ -105,13 +105,13 @@ body p {
 }
 
 @media (max-width: 768px) {
-  .row {
+  .signup-row {
     flex-direction: column-reverse;
   }
-  .main-right .desktop-img {
+  .signup-right .desktop-img {
     display: none;
   }
-  .main-right .mobile-img {
-    display: block;
+  .signup-right .mobile-img {
+    display: block !important;
   }
 }/*# sourceMappingURL=style.css.map */

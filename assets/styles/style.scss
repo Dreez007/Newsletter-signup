@@ -73,7 +73,7 @@ body {
       }
       .mobile-img {
         display: none;
-        width: 100%;
+        width: 90%;
         max-width: 100%;
       }
     }
@@ -114,18 +114,16 @@ body {
 
 
 @media (max-width:768px) {
-
-  .row {
+  .signup-row {
     flex-direction: column-reverse;
   }
-
   // switching from desktop image to mobile image
-  .main-right {
+  .signup-right {
     .desktop-img {
       display: none;
     }
     .mobile-img {
-      display: block;
+      display: block !important;
     }
   }
 
