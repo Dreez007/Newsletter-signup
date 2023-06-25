@@ -1,0 +1,132 @@
+:root {
+  --color-primary: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+  --error-input-background: hsl(4, 100%, 67%, .2);
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: var(--charcoal-grey);
+  color: var(--dark-slate-grey);
+  font-family: 'Roboto', sans-serif;
+  p {
+    font-size: 16px !important;
+    margin-bottom: 0;
+  }
+}
+
+.signup-page {
+  height: 100vh;
+  display: flex;
+  .signup-row {
+    width: 65%;
+    background-color: var(--white);
+    .signup-left-container {
+      .signup-left {
+        width: 80%;
+        h1 {
+          font-weight: 700;
+        }
+        form {
+          label {
+            font-size: small;
+            font-weight: 700;
+          }
+          input {
+            &:active, &:focus {
+              border: 1px solid var(--dark-slate-grey);
+              box-shadow: none;
+              cursor: pointer;
+            }
+          }
+          .error-input-field {
+            border: 1px solid var(--color-primary);
+            background-color: var(--error-input-background);
+          }
+          .error-text {
+            font-size: small !important;
+            color: var(--color-primary);
+          }
+          button {
+            background-color: var(--dark-slate-grey);
+            color: var(--white);
+            &:hover {
+              background-color: var(--color-primary);
+              color: var(--white);
+            }
+          }
+        }
+      }
+    }
+    .signup-right {
+      .desktop-img {
+        width: 50rem;
+        max-width: 100%;
+        height: 28em;
+        object-fit: contain;
+      }
+      .mobile-img {
+        display: none;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.thanks-page {
+  height: 100vh;
+  display: none;
+  .thanks-row {
+    background-color: var(--white);
+    width: 23em;
+    .thanks-col {
+      width: 100%;
+    img {
+      width: 3em;
+    }
+    h1 {
+      line-height: 100%;
+      font-weight: 700;
+    }
+    .subscribed-mail {
+      color: var(--grey);
+      font-weight: 700;
+    }
+    button {
+      background-color: var(--dark-slate-grey);
+        color: var(--white);
+        &:hover {
+          background-color: var(--color-primary);
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
+
+
+
+@media (max-width:768px) {
+
+  .row {
+    flex-direction: column-reverse;
+  }
+
+  // switching from desktop image to mobile image
+  .main-right {
+    .desktop-img {
+      display: none;
+    }
+    .mobile-img {
+      display: block;
+    }
+  }
+
+}
